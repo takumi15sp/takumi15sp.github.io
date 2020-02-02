@@ -35,7 +35,7 @@ img{
 
 }
 
-.rec{/*いい感じの場所に入らない*/
+.rec{
 width: 151px;
 height: 48px;
 background-color: #FFE000;
@@ -49,7 +49,7 @@ margin-top: 11px;
 box-shadow: 3px 3px 10px #00000029;
 }
 
-.part2{/*若干左寄りのせいで、h２が２行になってしまう。*/
+.part2{
     display:flex; 
     justify-content: space-between; 
     margin-top: 100px;
@@ -132,26 +132,25 @@ h2{
     text-align: center;
 }
 
-/*ここにあるのを使って、「ーーSERVICEーー」を再現しようとした。
-.h23{
-    display: flex;
-    align-items: center;
+/*ここにあるのを使って、「ーーSERVICEーー」を再現しようとした。*/
+.part3{
+display: flex;
+align-items: center;
+justify-content: center; 
+}
+.bdTtl:before,
+.bdTtl:after {
+border-top: 1px solid;
+content: "";
+width:5em; 
+}
+.bdTtl:before {
+margin-right: 1rem;
+}
+.bdTtl:after {
+margin-left: 1rem;
 }
 
-.h2:before,.pa3:after{
-    flex-grow: 1;
-    height: 1px;
-    background: #fff;
-    display:block;
-}
-
-.h2:before{
-    margin-right:.4em;
-}
-
-.h2:after{
-    margin-left:.4em;
-}*/
 
 .part4{
     display: flex;
@@ -160,8 +159,7 @@ h2{
 }
 
 .part4-1,.part4-2,.part4-3{
-    width:200px; /*max-width指定してるのにそれを超えられちゃう、最初各
-    imgを３０％にしてみたら画像が大きくはみ出た。*/
+    width: 22%;
     height:200px;
 }
 
@@ -255,10 +253,17 @@ font-weight: bold;
     color:#109954
 }
 
+.part55{
+    margin-bottom:50px;
+}
+
 .part6-1{
     display:flex;
     justify-content: space-between;
-    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
 }
 
 .part6-1-1{
@@ -273,9 +278,11 @@ font-weight: bold;
     margin-bottom: auto;
 }
 
-.part6-1-2 p{
+.part6-1-3 p{
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: 10px;
+
 }
 
 .part6-1-2 span{
@@ -300,6 +307,13 @@ font-weight: bold;
         width:108px;
         padding-top:37px;
         padding-bottom:50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-indent: -999px;
+        z-index: 2;
 }
 
 .part7 a{
