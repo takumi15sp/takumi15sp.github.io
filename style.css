@@ -5,42 +5,40 @@ img{
     height:auto;
 }
 
-*{
-    font-family: sans-serif;/*フォントを変えたかったのですがわかりませんでした。*/
-}
-
 .body{
     color: #333;
     width: 1280px;
-}
-
-.body-inner{
-    max-width:1080px;
-    padding:0 100px;
-    margin-right: auto;
-    margin-left: auto;
+    font-family: YuGothic,'Yu Gothic',sans-serif;/*ここじゃないの？さるわか参照*/
 }
 
 .heading{
     height:70px;
+}
+
+.heading-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading-logo{
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
-
-.heading h1{
+.heading-logo h1{
     width: 130px;
     height: 33px;
-    margin-top:11px;
-
+    margin-top:18px;
+    display:inline-block;
 }
 
-.rec{
+.recruit{
 width: 151px;
 height: 48px;
 background-color: #FFE000;
 border-radius:24px;
-text-align: center;
 line-height: 48px;
 text-decoration: none;
 color:black;
@@ -49,57 +47,64 @@ margin-top: 11px;
 box-shadow: 3px 3px 10px #00000029;
 }
 
-.part2{
-    display:flex; 
+
+.main-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto;   
+    display:flex;
     justify-content: space-between; 
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-.part2-1{
-    height: 448px;
-    width: 520px; 
+.main1{
+margin-top: 204px;
+margin-bottom: 243px;
 }
 
-.part2-1-inn{
-    margin-top: 120px;
-    /*margin-bottom: auto;とmargin-top:auto;で中央寄席したかったんですが、うまくできずに諦めました。*/
+.main1-inner{
+    display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center; 
 }
 
-.part2-1-inn-inn{
-    padding-top: 35px;
+.main1-contents{
+    text-align: left;
+}
+
+
+.main1-bottom{
+    margin-top: 40px;
     display:flex; 
     justify-content: space-between; 
     width: 400px;
+    margin-right: auto;
 }
 
-.part2-1-inn-inn a{
+.main1-bottom a{
     font-weight: bold;
+    
 }
-.part2-1 h2{
+
+
+.main1 h2{
     font-size: 36px;
     font-weight: bold;
     width:504px;
     height: 36px;
-    display: inline-block;
+    display:inline-block;
+    
 }
 
-.part2-1 p{
-    padding-top: 40px;
+.main1 p{
+    margin-top: 34px;
     width: 400px;
     height: 43px;
-    display: inline-block;
     font-size: 16px;
-    font-family: sans-serif;
+    display: inline-block;
 }
 
-.part2-2{
-    width:50%;
-    height: 448px;
-    width:560px;
-}
-
-.cont{
+.contact{
     display:inline-block;
     background-color: #109954;
     color:white;
@@ -113,6 +118,7 @@ box-shadow: 3px 3px 10px #00000029;
 }
 
 .siryo{
+    
     display:inline-block;
     background-color: white;
     color: #109954;
@@ -126,73 +132,158 @@ box-shadow: 3px 3px 10px #00000029;
     box-shadow: 3px 3px 10px #00000029;
 }
 
-h2{
-    font-size:36px;
-    font-weight: bold;
-    text-align: center;
-}
+.main-visual{
+    height: 448px;
+    width:560px;
+   margin-top:91px;
+   margin-bottom: 12px;/*::::*/
+}/* main1のせいでmain-visualが指定の大きさにできない→  main1-inner  →main1-contents が幅を取ってるにが分かったがcssに異常を見つけられなかった*/
 
-/*ここにあるのを使って、「ーーSERVICEーー」を再現しようとした。*/
-.part3{
+
+.service-title{
 display: flex;
 align-items: center;
-justify-content: center; 
+justify-content: center;
 }
-.bdTtl:before,
-.bdTtl:after {
-border-top: 1px solid;
+
+.service-title:before,.service-title:after {
+border-top: 4px solid;
+border-color: #109954;
 content: "";
-width:5em; 
+width:200px; 
 }
-.bdTtl:before {
+
+.service-title:before {
 margin-right: 1rem;
 }
-.bdTtl:after {
+
+.service-title:after {
 margin-left: 1rem;
 }
 
-
-.part4{
-    display: flex;
-    justify-content: space-between;
-    padding:140px 80px;
+.service-title h2{
+    font-size: 36px;
+    font-weight: bold;
 }
 
-.part4-1,.part4-2,.part4-3{
-    width: 22%;
+.service-ttl-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+
+
+.service{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 120px;
+}
+
+.service-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.service1,.service2,.service3 img{
+    display:inline-block;
+    width:200px;
     height:200px;
 }
 
-.part4-1 p,.part4-2 p,.part4-3 p{
+.service1,.service2,.service3{
     text-align: center;
-    padding-top: 30px;
 }
 
-.part5 h2{
+
+
+.service1{
+    margin-left: 140px;
+    margin-right: 100px;
+}
+
+.service2{
+    margin-right: 100px;
+}
+
+.service3{
+    margin-right: 140px;
+}
+
+.service1 p,.service2 p,.service3 p{
+    font-size: 20px; 
+    font-weight: bold;
+    line-height: 34px;
+    width: 204px;
+    margin-top: 30px;
+}
+
+
+.about-ttl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+.about-ttl:before,.about-ttl:after {
+    border-top: 4px solid;
+    border-color: #109954;
+    content: "";
+    width:200px; 
+    }
+    
+.about-ttl:before {
+    margin-right: 1rem;
+    }
+    
+.about-ttl:after {
+    margin-left: 1rem;
+    }
+
+.about-ttl h2{
 font-size:36px;
 text-align: center;
 font-weight: bold;
 }
 
+.about-ttl-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
 
-.part5-1{
+
+
+
+
+.about-innner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.about1{
     display: flex;
     justify-content: space-between;
-    margin: 100px 70px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 100px;
 }
 
-.part5-1-1,.part5-1-2{
-    width:45%;
-}
+/*width:%;を使うと大きさが再現できないから使いたくないけどそれっていいの？動画では使っていたし、、*/
 
-.part5-1-1 p{
+
+.about1-tex p{
     width: 450px;
     height: 127px;
     font-size: 16px;
-    display:inline-block;
+    display:block;
+    line-height: 27px;
 }
 
-.part5-1-1 a{
+.about1-tex a{
     margin-top:29px;
     width:166px;
     height: 48px;
@@ -206,29 +297,35 @@ font-weight: bold;
     box-shadow: 3px 3px 10px #00000029;
 }
 
-.part5-1-2{
+.about1-img{
     height: 278px;
     width: 450px;
-}
+    box-shadow: 0px 11px 20px #00000029;
+}/*左寄せのmarginとかいる？必要になった時だけ？*/
 
-.part5-2{
+
+
+.about2{
     display: flex;
     justify-content: space-between;
-    margin: 0 70px 100px 70px;   
+    margin:100px 70px 120px 70px;
 }
 
-.part5-2-1,.part5-2-2{
-    width:45%;
-}
-
-.part5-2-2 p{
-    display: inline-block;
-    margin-top: 29px;
-    height: 97px;
+.about2-img{
+    box-shadow: 0px 11px 20px #00000029;
+    height: 278px;
     width: 450px;
 }
 
-.part5-2-2 a{
+.about2-tex p{
+    display: block;
+    margin-top: 30px;
+    height: 97px;
+    width: 450px;
+    line-height: 27px;
+}
+
+.about2-tex a{
     margin-top:29px;
     width:166px;
     height: 48px;
@@ -242,50 +339,102 @@ font-weight: bold;
     box-shadow: 3px 3px 10px #00000029;
 }
 
-.part5-2-1 {
-    height: 278px;
-    width: 450px;
-}
-
-.part5-2-2 h3{
+.about2-tex h3{
     font-size: 32px;
     font-weight: bold;
     color:#109954
 }
 
-.part55{
-    margin-bottom:50px;
+
+
+
+.news-ttl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 101px;
+    }
+    
+.news-ttl:before,.news-ttl:after {
+    border-top: 4px solid;
+    border-color: #109954;
+    content: "";
+    width:200px; 
+    }
+    
+.news-ttl:before {
+    margin-right: 1rem;
+    }
+    
+.news-ttl:after {
+    margin-left: 1rem;
+    }
+
+.news-ttl h2{
+font-size:36px;
+text-align: center;
+font-weight: bold;
 }
 
-.part6-1{
+.news-ttl-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+
+
+
+
+.news-out{
+    position: relative;
+}
+
+.news-out a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2
+}
+
+
+.news-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.news-content1{
+    height: 204px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
     display:flex;
     justify-content: space-between;
-    position: relative;
-    z-index: 1;
     border-top: 1px solid #D6D6D6;
     border-bottom: 1px solid #D6D6D6;
+    margin:0 auto;
 }
 
-.part6-1-1{
-    width:25%;
-    display: inline-block;
+.news-img{
+   width: 300px;
+   height: 168px;
+   margin-right: 34px;
+   /*margin-left: auto;いる？;*/
 }
 
-.part6-1-15{
-    width:65%;
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
-.part6-1-3 p{
+.news-time time{
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
+    line-height: 27px;
 }
 
-.part6-1-2 span{
+
+.news-time span{
     display: inline-block;
     border-radius: 13px;
     border:2px solid #109954;
@@ -293,254 +442,124 @@ font-weight: bold;
     background-color: white;
     width:101px;
     height:26px;
-    line-height: 26px;
+    line-height: 24px;
     text-align: center;
+    font-size: 14px;
 }
 
-.part6-1-3{
+.document p{
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 27px;
 }
 
-.part6-1 a{
-        display:block;
-        width:108px;
-        padding-top:37px;
-        padding-bottom:50px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-indent: -999px;
-        z-index: 2;
+.document{
+    margin-top:15px;
 }
 
-.part7 a{
+.document2 p{
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.document2{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.more-btn{
     margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
     width:166px;
     height: 48px;
-    color: white;
     background-color:#109954 ;
     line-height: 48px;
     text-align: center;
     border-radius: 24px;
     display:block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 120px;
-    text-decoration: none;
     box-shadow: 3px 3px 10px #00000029;
+
+    position: relative;
+    z-index: 2;
 }
+
+.more-btn a{
+    color: white;
+    text-decoration: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 footer{
     height: 135px;
     background-color: #E8E8E8;
-    /*フッターのグレーがうまく再現できないです。*/
 }
 
-.footer1 img{
+.footer-inner{
+    max-width:1080px;
+    margin-right: auto;
+    margin-left: auto;     
+}
+
+.ft-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-img{
     display: block;
     height: 70px;
     width: 70px;
+    margin-right: auto;
+    margin-top: 25px;
 }
 
-.footer1 p{
-    font-size: 14px;
-    border-right: black;
+.ft-text li+ li {
+border-left: 1px solid #333;
 }
 
-.footer1-2{
+.ft-text li{
+    height: 25px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.ft-text{
     display: flex;
     justify-content: space-between;
-    width:681px;
-    margin-top: auto;
-    margin-bottom: auto;
-    /*いい感じに配置できないです*/
+    margin-top: 50px;
 }
 
-.footer1-2 a{
-    width:25%;
+
+.ft-text a{
     font-size: 14px;
+    line-height: 24px;
     color: black;
-    border-right: 1px solid black;
     text-decoration: none;
 }
 
-.footer1-1{
-    margin:25px 0 20px 100px;
-    width:599px;
-}
-
-.footer1{
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer2 p{
+.ft-title{
     text-align: center;
+}
+
+.ft-title p{
     font-size: 14px;
-}
-
-@media(max-width: 768px){
-
-    .heading h1{
-        width:50%;
-    }
-
-    .rec{
-        width:50%;
-    } /*端っこにくっついて、いい感じにならない*/
-
-    .part2{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-    }
-    .part2-1{
-        margin:0 auto;
-        width: 100%;
-        /*height: 301px;
-        width: 375px;  こういうことではないんですよね？*/
-        order: 2;
-    }
-
-    .part2-1-inn{
-        margin: 0 auto;
-    }
-
-    .part2-1-inn-inn{
-        flex-direction: column;
-    }
-
-    .part2-1-inn-inn .cont .siryo{
-        width:100%;
-    }
-
-    .part2-1-inn-inn a{
-        text-align: center;
-    }
-
-    .cont{
-        margin:0 auto;
-    }
-
-    .cont .siryo{
-        margin:0 auto; /*破脳してない*/
-    }
-
-    .part2-1-inn span{
-        display: block;
-        height: 20px;
-    }
-
-    .part2-1-inn h2{
-        text-align: center;
-    }
-
-    .part2-1-inn p{
-        text-align: center;
-        margin:0 auto;/*反応いてない */
-        line-height: 1px;
-        display: inline-block;
-        height: 72px;
-        width: 345px;
-    }
-
-    .part2-1-inn br{
-        display: none;
-    }
-
-    .part2-2{
-        min-width: 345px;
-        min-height: 276px;
-        width: 100%;
-        order: 1;
-        margin: 0 auto;
-        height: 100%;
-    }
-
-
-    .part4{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-    }
-
-    .part4-1,.part4-2,.part4-3{
-        width: 100%;
-        padding-bottom: 120px;
-    }
-
-    .part5 p{
-        text-align: center;
-        width: 100%;
-    }
-
-    .part5-1{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-    }
-
-    .part5-1 img{
-        order:5;
-    }
-
-    .part5-1 p{
-        order: 2;
-    }
-
-    .part5-1 a{
-        order: 3;
-    }  /*順番と写真の位置がうまく反映されないです*/
-
-    .part5-2{
-        display:flex;
-        flex-direction: column;
-        width:100%;
-    }
-
-    .part6-1
-        {
-            display:flex;
-            flex-direction: column;
-            width:100%;
-    }
-
-    .part6-1-1{
-            width: 100%;
-            
-    }
-    .part6-1-2{
-        width: 100%;
-    }
-    .part6-1-3{
-        width: 100%;
-    }
-    .part6-1-4{
-        width: 100%;
-    }
-
-    footer{
-        height: 289px;
-        width: 375px;
-    }
-    .footer1{
-            display:flex;
-            flex-direction: column;
-            width:100%;
-    }
-
-    .footer1 p{
-        border-right: none;
-    }
-
-    .footer1-2   {
-        display:flex;
-        flex-direction: column;
-        width:100%;
-}
-
-    
+    line-height: 24px;
 }
