@@ -5,7 +5,7 @@ img{
     height:auto;
 }
 
-.body{
+body{
     color: #333;
     width: 1280px;
     font-family: YuGothic,'Yu Gothic',sans-serif;/*ここじゃないの？さるわか参照*/
@@ -31,7 +31,6 @@ img{
     width: 130px;
     height: 33px;
     margin-top:18px;
-    display:inline-block;
 }
 
 .recruit{
@@ -45,6 +44,8 @@ color:black;
 display: inline-block;
 margin-top: 11px;
 box-shadow: 3px 3px 10px #00000029;
+font-weight: bold;
+font-size: 18px;
 }
 
 
@@ -56,10 +57,7 @@ box-shadow: 3px 3px 10px #00000029;
     justify-content: space-between; 
 }
 
-.main1{
-margin-top: 204px;
-margin-bottom: 243px;
-}
+
 
 .main1-inner{
     display: flex; /* 子要素をflexboxで揃える */
@@ -73,7 +71,8 @@ margin-bottom: 243px;
 }
 
 
-.main1-bottom{
+
+.main1-bott{
     margin-top: 40px;
     display:flex; 
     justify-content: space-between; 
@@ -81,27 +80,22 @@ margin-bottom: 243px;
     margin-right: auto;
 }
 
-.main1-bottom a{
+.main1-bott a{
     font-weight: bold;
-    
 }
 
 
-.main1 h2{
+.main1-contents h2{
     font-size: 36px;
     font-weight: bold;
-    width:504px;
-    height: 36px;
-    display:inline-block;
-    
 }
 
-.main1 p{
+.main1-contents p{
     margin-top: 34px;
     width: 400px;
     height: 43px;
     font-size: 16px;
-    display: inline-block;
+    display: inline-block;/*必要？*/
 }
 
 .contact{
@@ -258,7 +252,7 @@ font-weight: bold;
 
 
 
-.about-innner{
+.about-inner{
     max-width:1080px;
     margin-right: auto;
     margin-left: auto; 
@@ -420,11 +414,19 @@ font-weight: bold;
 }
 
 .news-img{
-   width: 300px;
-   height: 168px;
-   margin-right: 34px;
-   /*margin-left: auto;いる？;*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width:30%;
 }
+
+
+
+.news-txt{
+    width: 70%;
+}
+
+
 
 
 .news-time time{
@@ -562,4 +564,15 @@ border-left: 1px solid #333;
 .ft-title p{
     font-size: 14px;
     line-height: 24px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1281px){
+    body{
+        width:100%;
+    }
 }
