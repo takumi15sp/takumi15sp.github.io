@@ -773,20 +773,19 @@ border-left: 1px solid #333;
         order:2;
         margin-top:50px;
     }
-
-    .about1-tex:not(p){/*なんでできない？？？？？*/
-        text-align: center;
-    }
     
     .about1-tex p{
-    display: block;/*ブロック要素にしたけど、それでもダメだった。*/
+    
     width: 345px;
     height: 153px;/*heightって設定するものなの？？？*/
     }
 
     .about1-tex a{
-        display: inline-block;
+        display: block;
         margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
     
 
@@ -810,15 +809,18 @@ border-left: 1px solid #333;
         margin-top: 50px;
     }
 
+    .about2-tex a{
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
 
-    .about2-tex p{
-        display: block;/*ブロック要素にしたけど、それでもダメだった。*/
-        width: 345px;
-        height: 124px;/*heightって設定するものなの？？？*/
     }
 
-    .about2-tex:not(p){/*なんでできない？？？？？ h3ってブロック要素じゃないの？　じゃ効かないはずじゃないの？*/
-        text-align: center;
+
+    .about2-tex p{
+        width: 345px;
+        height: 124px;/*heightって設定するものなの？？？*/
     }
 
     .news-ttl-inner{
