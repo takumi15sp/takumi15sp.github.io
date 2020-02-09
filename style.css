@@ -661,7 +661,6 @@ footer{
 .ft-cont{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .ft-img{
@@ -669,6 +668,7 @@ footer{
     height: 70px;
     width: 70px;
     padding-top: 25px;
+    padding-bottom: 12px;
 }
 
 .ft-text li+ li {
@@ -692,7 +692,6 @@ border-left: 1px solid #333;
 .ft-text{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
 }
 
 
@@ -712,7 +711,10 @@ border-left: 1px solid #333;
     line-height: 24px;
 }
 
-
+.ft-text-out{
+    display: flex;
+    align-items: center;
+}
 
 
 
