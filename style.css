@@ -85,6 +85,12 @@ font-size: 18px;
     font-weight: bold;
 }
 
+@media screen and (max-width:1079px){
+    .main-contents h2{
+        font-size: 28px;
+}
+}
+
 .main-contents p{
     margin-top: 34px;
     width: 400px;
@@ -123,6 +129,8 @@ font-size: 18px;
 .main-visual{
     height: 448px;
     width:560px;
+    display: flex;
+    align-items: center;
 }
 
 .service-title{
@@ -281,10 +289,15 @@ font-weight: bold;
 }
 
 .about1-img{
-    height: 278px;
+    height: 100%;
     width: 48%;
     box-shadow: 0px 11px 20px #00000029;
 }
+
+.about1-img img{
+    vertical-align: bottom;
+}
+
 
 
 
@@ -297,8 +310,12 @@ font-weight: bold;
 
 .about2-img{
     box-shadow: 0px 11px 20px #00000029;
-    height: 278px;
+    height: 100%;
     width:48%;
+}
+
+.about2-img img{
+    vertical-align: bottom;
 }
 
 .about2sp{
