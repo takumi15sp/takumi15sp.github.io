@@ -129,8 +129,6 @@ font-size: 18px;
 .main-visual{
     height: 448px;
     width:560px;
-    display: flex;
-    align-items: center;
 }
 
 .service-title{
@@ -262,6 +260,14 @@ font-weight: bold;
     align-items: center;
 }
 
+@media screen and (max-width:1079px){
+    .about1{
+        padding-top: 75px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+}
+
 .about1sp{
     width: 48%;
 }
@@ -306,6 +312,15 @@ font-weight: bold;
     justify-content: space-between;
     padding:100px 70px 120px 70px;
     align-items: center;
+}
+
+@media screen and (max-width:1079px){
+    .about2{
+        padding-top: 75px;
+        padding-right: 35px;
+        padding-left: 35px;
+        padding-bottom: 60px;
+    }
 }
 
 .about2-img{
@@ -407,11 +422,13 @@ font-weight: bold;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;/*100だよ！*/
+    width: 100%;
     height: 100%;
     text-indent:-999px;
     z-index: 2
 }
+
+
 
 
 .news-content1{
@@ -427,6 +444,7 @@ font-weight: bold;
 .news-img{
    display: flex;
    justify-content: center;
+   align-items: center;
    width: 300px;
   height: 168px;
 }
@@ -574,6 +592,7 @@ border-left: 1px solid #333;
 
 .ft-title{
     text-align: center;
+    padding-bottom: 14px;
 }
 
 .ft-title p{
@@ -598,6 +617,11 @@ border-left: 1px solid #333;
     body{
         width:100%;
         margin:0 auto;
+    }
+
+    .heading h1{
+        width: 110px;
+        height: 28px; 
     }
 
     .heading-inner{
@@ -692,6 +716,10 @@ border-left: 1px solid #333;
     }
 
 
+    .service-title h2{
+        font-size: 28px;
+    }
+
     .service-title:before {
     margin-right: 17px;
     }
@@ -714,7 +742,9 @@ border-left: 1px solid #333;
 
 
 
-
+    .about-ttl h2{
+        font-size: 28px;
+    }
 
     .about-ttl:before{
     margin-right: 17px;
@@ -821,6 +851,10 @@ border-left: 1px solid #333;
 
     .news-ttl{
         margin-bottom: 80px;
+    }
+
+    .news-ttl h2{
+        font-size: 28px;
     }
 
 
